@@ -1,0 +1,47 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.gameItem {
+  width: 50px;
+  height: 50px;
+}
+
+#cheatingBotOptions {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+#pvpOptions {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.typeOfGameInput {
+  margin: 15px;
+}
+
+.highLight:after {
+  content: " ";
+  display: block;
+  background: #c00;
+  height: 50px;
+  width: 100%;
+
+  /* position: absolute;
+  bottom: -29px; */
+}
+
+.highLightGreen:after {
+  content: " ";
+  display: block;
+  background: #0c0;
+  height: 50px;
+  width: 100%;
+
+  /* position: absolute;
+  bottom: -29px; */
+}

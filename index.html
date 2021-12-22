@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Popping Game</title>
+  </head>
+  <body>
+    <div id="startingScreen">
+      <h1>How Do You Want To Play?</h1>
+      <select id="whatSetting">
+        <option disabled selected value>-- select an option --</option>
+        <option value="pvp">Player vs. Player</option>
+        <option value="cheatingBot">Cheating Bot</option>
+      </select>
+      <div id="cheatingBotOptions">
+        <input type="checkbox" id="amIGoingFirst" />
+        <p>Am I Going First?</p>
+        <input type="text" id="cheatingBotTypeOfGame" placeholder="Type Of Game" class="typeOfGameInput" />
+      </div>
+      <div id="pvpOptions">
+        <span
+          ><input type="text" id="pvpTypeOfGame" placeholder="Type Of Game" class="typeOfGameInput" />
+      </div>
+      <button id="submitStartingScreen">Ok</button>
+    </div>
+
+    <div id="cheatingBotScreen">
+      <h1 id="highestNumberCheatingBot"></h1>
+      <p id="whatToDoCheatingBot"></p>
+      <button id="btnForTurnsCheatingBot"></button>
+      <div id="gameBoardCheatingBot">
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+      </div>
+    </div>
+    
+    <div id="pvpScreen">
+      <h1 id="highestNumberPVP"></h1>
+      <p id="whatToDoPVP"></p>
+      <button id="btnForTurnsPVP"></button>
+      <div id="gameBoardPVP">
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+        <div class="row">
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+          <input type="checkbox" class="gameItem" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
