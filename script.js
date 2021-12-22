@@ -123,6 +123,8 @@ const btnForTurnsCheatingBot = document.querySelector(
   "#btnForTurnsCheatingBot"
 );
 
+const onTrackDisplay = document.querySelector("#onTrackDisplay");
+
 const returnIfGrandsonOf = (array, grandparent) => {
   return array.filter((gameItem) => {
     if (gameItem.parentElement.parentElement == grandparent) {
@@ -243,6 +245,7 @@ const myTurn = (numberChecked, firstTime) => {
           (gameSettings.highestNumber + 1);
       if (numberToPushDown) {
         pushDown(numberToPushDown);
+        gameSettings.onTrack = true;
       } else {
         numberToPushDown = getRandomInt(gameSettings.highestNumber);
         pushDown(numberToPushDown);
@@ -305,6 +308,13 @@ const initiateCheatingBotScreen = () => {
       if (numberChecked) {
         myTurn(numberChecked);
       }
+    }
+    if (gameSettings.onTrack) {
+      onTrackDisplay.innerHTML = "You are on track to win!";
+      onTrackDisplay.style.color = "#0c0";
+    } else {
+      onTrackDisplay.innerHTML = "You are not on track to win!";
+      onTrackDisplay.style.color = "#c00";
     }
   });
 };
