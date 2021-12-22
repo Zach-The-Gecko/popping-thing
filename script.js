@@ -218,7 +218,7 @@ const myTurn = (numberChecked, firstTime) => {
       pushDown(numberToPushDown);
       gameSettings.onTrack = true;
     } else {
-      numberToPushDown = getRandomInt(4);
+      numberToPushDown = getRandomInt(gameSettings.highestNumber);
       pushDown(numberToPushDown);
       gameSettings.onTrack = false;
     }
@@ -228,7 +228,7 @@ const myTurn = (numberChecked, firstTime) => {
       if (numberToPushDown) {
         pushDown(numberToPushDown);
       } else {
-        numberToPushDown = getRandomInt(4);
+        numberToPushDown = getRandomInt(gameSettings.highestNumber);
         pushDown(numberToPushDown);
         gameSettings.onTrack = false;
       }
@@ -244,7 +244,7 @@ const myTurn = (numberChecked, firstTime) => {
       if (numberToPushDown) {
         pushDown(numberToPushDown);
       } else {
-        numberToPushDown = getRandomInt(4);
+        numberToPushDown = getRandomInt(gameSettings.highestNumber);
         pushDown(numberToPushDown);
         gameSettings.onTrack = false;
       }
